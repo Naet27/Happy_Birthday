@@ -1,0 +1,127 @@
+:root{
+    --bg:#0f1724;
+    --card:#0b1220;
+    --accent:#ff6b81;
+    --text:#f5f7fb;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(180deg,#071021 0%, #0f1a2b 100%);
+    color:var(--text);
+    -webkit-font-smoothing:antialiased;
+  }
+  .container{
+    max-width:900px;
+    margin:40px auto;
+    padding:24px;
+    background:rgba(255,255,255,0.03);
+    border-radius:18px;
+    box-shadow:0 6px 30px rgba(0,0,0,0.6);
+  }
+  .hero{ text-align:center; padding:36px 12px;}
+  .title{
+    font-family: 'Great Vibes', cursive;
+    font-size:48px;
+    margin:0;
+    color:var(--accent);
+    text-shadow:0 6px 18px rgba(255,107,129,0.12);
+  }
+  .subtitle{ margin:6px 0 20px; opacity:0.9 }
+  .countdown{ display:flex; justify-content:center; gap:14px; margin:18px 0; }
+  .countdown div{
+    background:rgba(255,255,255,0.04);
+    padding:12px 18px;
+    border-radius:12px;
+    min-width:72px;
+  }
+  .countdown span{ display:block; font-size:20px; font-weight:600; }
+  .countdown small{ display:block; opacity:0.7; font-size:12px; margin-top:6px; }
+  
+  .btn{
+    margin-top:12px;
+    background:linear-gradient(90deg,var(--accent),#ff9aa2);
+    border:none;
+    padding:10px 18px;
+    border-radius:12px;
+    color:white;
+    font-weight:600;
+    cursor:pointer;
+  }
+  .message, .gallery{ padding:18px; margin-top:14px; background:rgba(255,255,255,0.02); border-radius:12px;}
+  .message h2, .gallery h2{ margin-top:0; color:#ffd7de }
+  .photos{ display:flex; gap:10px; flex-wrap:wrap; justify-content:center; }
+  .photos img{ width:200px; height:140px; object-fit:cover; border-radius:10px; box-shadow:0 6px 20px rgba(0,0,0,0.6); cursor:pointer; transform:translateY(0); transition:transform .2s;}
+  .photos img:hover{ transform:translateY(-6px); }
+  
+  .footer{ text-align:center; padding:14px; opacity:0.85; font-size:14px; }
+  @media (max-width:600px){
+    .title{ font-size:36px }
+    .photos img{ width:140px; height:100px }
+    .countdown{ gap:8px }
+  }
+
+  #confettiCanvas {
+    position: fixed;
+    top:0; left:0;
+    width:100%; height:100%;
+    pointer-events:none;
+  }
+  
+  #balloonContainer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    pointer-events:none;
+  }
+  
+  .typing {
+    margin-top: 20px;
+    background: rgba(255,255,255,0.05);
+    padding: 16px;
+    border-radius: 12px;
+  }
+  #typedText {
+    font-size: 18px;
+    line-height: 1.5;
+    min-height: 40px;
+    white-space: pre-line;
+  }
+
+  .cardBox {
+    margin-top:16px;
+    padding:20px;
+    background:rgba(255,255,255,0.05);
+    border-radius:12px;
+    font-size:18px;
+    text-align:center;
+    min-height:60px;
+  }
+
+  .wish-box {
+    background: #222336;   /* พื้นหลังเข้ม */
+    padding: 2rem;
+    margin: 2rem auto;
+    border-radius: 16px;
+    max-width: 900px;       /* ความกว้างไม่เต็มจอ */
+    color: #fff;            /* ตัวอักษรสีขาว */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    text-align: center;
+  }
+  
+  .wish-box h2 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #ffccff;
+  }
+  
+  .wish-box p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+  }
+  
+  
+  
+  

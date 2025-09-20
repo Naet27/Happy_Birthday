@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Happy Birthday To Milk</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&family=Great+Vibes&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+</head>
+<body>
+  <main class="container">
+    <header class="hero">
+      <h1 class="title">Happy Birthday To Milk 🎂</h1>
+      <p class="subtitle">นับถอยหลังอีก</p>
+      <div id="countdown" class="countdown">
+        <div><span id="days">00</span><small>วัน</small></div>
+        <div><span id="hours">00</span><small>ชั่วโมง</small></div>
+        <div><span id="minutes">00</span><small>นาที</small></div>
+        <div><span id="seconds">00</span><small>วินาที</small></div>
+      </div>
+      <button id="playBtn" class="btn">กดปุ่มเพื่อฟังเพลง ▶︎ •၊၊||၊|။||||။‌‌‌‌‌၊|•</button>
+    </header>
+
+    <section class="message">
+      <h2>วันนี้เป็นวันอะไรเอ่ย ?</h2>
+      <p> อ่อวันนี้เป็นวันเกิดของน้องมิ้ว อายุครบ 23 ปีบริบูรณ์เเย้วเย้ โปรดเลื่อนลงไปข้างล่างเพื่ออ่านต่อ</p>
+    </section>
+
+    <section class="gallery">
+      <h2>Moment Memerry</h2>
+      <div class="photos">
+        <img src="images/photo1.jpg" alt="photo1" />
+        <img src="images/photo2.jpg" alt="photo2" />
+        <img src="images/photo3.jpg" alt="photo3" />
+        <img src="images/photo4.jpg" alt="photo4" />
+        <img src="images/photo5.jpg" alt="photo5" />
+        <img src="images/photo6.jpg" alt="photo6" />
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>Happy Birthday na krub</p>
+    </footer>
+  </main>
+
+  <audio id="bgMusic" src="music/music.mp3" loop></audio>
+  <script src="script.js"></script>
+</body>
+<!-- พื้นที่สำหรับ effect -->
+<canvas id="confettiCanvas"></canvas>
+<div id="balloonContainer"></div>
+
+<!-- Typing effect -->
+<section class="wish-box">
+    <h2>มาอวยพรให้น้องมิ้วกันเถอะ</h2>
+    <p>
+      วันนี้เป็นวันเกิดอายุครบ 23 ปีบริบูรณ์เเล้วน้า ขอให้น้องมิ้วมีความสุขในทุกวัน 
+      มีแต่รอยยิ้มที่น่ารักในทุกวัน ไม่มีเรื่องขุ่นเคืองและทุกข์ใจในทุกวัน
+      ขอให้ทุกวันเป็นวันที่มีความสุขที่สุดเลย ไม่ใช่แค่วันนี้แต่เป็นตลอดไป
+      ระหว่างทางของการเติบโตขอให้มีแต่รอยยิ้มและเจอผู้คนที่น่ารักจะคอยอยู่ข้างๆ
+      เเละซัพพอร์ตแบบนี้ตลอดไปน้า  
+      <br><br>
+      Wishing you a birthday that's as amazing as you are.
+    </p>
+  </section>
+  
+
+<!--<section class="cards">
+    <h2>เปิดการ์ด</h2>
+    <button id="showCardBtn" class="btn">สุ่มการ์ด</button>
+    <div id="cardBox" class="cardBox"></div>
+  </section>-->
+  
+</html>
