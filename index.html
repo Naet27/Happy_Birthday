@@ -29,20 +29,54 @@
       <p> อ่อวันนี้เป็นวันเกิดของน้องมิ้ว อายุครบ 23 ปีบริบูรณ์เเย้วเย้ โปรดเลื่อนลงไปข้างล่างเพื่ออ่านต่อ</p>
     </section>
 
-    <section class="gallery">
-      <h2>Moment Memerry</h2>
-      <div class="photos">
-        <img src="images/photo1.jpg" alt="photo1" />
-        <img src="images/photo2.jpg" alt="photo2" />
-        <img src="images/photo3.jpg" alt="photo3" />
-        <img src="images/photo4.jpg" alt="photo4" />
-        <img src="images/photo5.jpg" alt="photo5" />
-        <img src="images/photo6.jpg" alt="photo6" />
-      </div>
-    </section>
+    <!-- เรียกใช้ Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+<section class="gallery">
+  <h2>Moment Memory</h2>
+  <!-- สไลด์ -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="images/photo1.jpg" alt="photo1" /></div>
+      <div class="swiper-slide"><img src="images/photo2.jpg" alt="photo2" /></div>
+      <div class="swiper-slide"><img src="images/photo3.jpg" alt="photo3" /></div>
+      <div class="swiper-slide"><img src="images/photo4.jpg" alt="photo4" /></div>
+      <div class="swiper-slide"><img src="images/photo5.jpg" alt="photo5" /></div>
+      <div class="swiper-slide"><img src="images/photo6.jpg" alt="photo6" /></div>
+    </div>
+
+    <!-- ปุ่มกดเลื่อน -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+
+    <!-- จุดบอกสถานะ -->
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
+<!-- เรียกใช้ Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    loop: true,
+    autoplay: {
+      delay: 2500, // 2.5 วิ ต่อภาพ
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>
+
 
     <footer class="footer">
-      <p>Happy Birthday na krub</p>
+      <p>Happy Birthday naa</p>
     </footer>
   </main>
 

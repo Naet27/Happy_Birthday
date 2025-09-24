@@ -40,21 +40,28 @@ playBtn.addEventListener("click", () => {
   playing = !playing;
 });
 
-// เปิดรูปแบบ lightbox แบบง่าย
-document.querySelectorAll(".photos img").forEach(img => {
+// ฟังก์ชันเปิด lightbox เมื่อกดที่ภาพ
+document.querySelectorAll(".swiper-slide img").forEach(img => {
   img.addEventListener("click", () => {
     const overlay = document.createElement("div");
     overlay.style.position = "fixed";
     overlay.style.inset = 0;
-    overlay.style.background = "rgba(0,0,0,0.8)";
+    overlay.style.background = "rgba(0,0,0,0.9)";
     overlay.style.display = "flex";
     overlay.style.alignItems = "center";
     overlay.style.justifyContent = "center";
     overlay.style.cursor = "zoom-out";
-    overlay.innerHTML = `<img src="${img.src}" style="max-width:90%; max-height:90%; border-radius:12px; box-shadow:0 8px 30px rgba(0,0,0,0.8)">`;
+    overlay.style.zIndex = "9999";
+
+    overlay.innerHTML = `
+      <img src="${img.src}" 
+           style="max-width:90%; max-height:90%; border-radius:12px; box-shadow:0 8px 30px rgba(0,0,0,0.8)">
+    `;
+
     overlay.addEventListener("click", () => overlay.remove());
     document.body.appendChild(overlay);
   });
+
 
   // ============ CONFETTI เมื่อถึงวันเกิด ============
 function launchConfetti(){
