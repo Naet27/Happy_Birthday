@@ -22,7 +22,7 @@
   }
   .hero{ text-align:center; padding:36px 12px;}
   .title{
-    font-family: 'Great Vibes', cursive;
+    font-family: 'Sriracha', cursive;
     font-size:48px;
     margin:0;
     color:var(--accent);
@@ -156,6 +156,18 @@
   font-size: 24px;          /* ปรับขนาดลูกศร */
   font-weight: bold;
   text-shadow: 0 0 8px rgba(0,0,0,0.6); /* เพิ่มเงาให้อ่านง่าย */
+}
+
+/* แก้ปุ่ม Swiper ให้เห็นชัด */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #fff; /* สีปุ่มเป็นขาว */
+  font-weight: bold;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 24px; /* ขนาดลูกศร */
 }
 
   

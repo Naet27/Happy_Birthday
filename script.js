@@ -1,17 +1,19 @@
 // ============ COUNTDOWN ============
-// ตั้งค่าวันเกิด (YYYY-MM-DDTHH:MM:SS)
-const birthday = new Date("2025-10-01T00:00:00");
+const birthday = new Date("2025-09-01T00:00:00");
 
 function updateCountdown(){
   const now = new Date();
   let diff = birthday - now;
+
   if(diff < 0) {
-    document.getElementById("countdown").innerHTML = "<div style='padding:10px'>วันนี้วันเกิดแล้ว! 🎉</div>";
+    document.getElementById("countdownText").textContent = "Happy Milk Day";
     launchConfetti();
     spawnBalloons();
     startTyping();
-    return clearInterval(timer);
+    clearInterval(timer);
+    return;
   }
+
   const days = Math.floor(diff / (1000*60*60*24));
   diff -= days * (1000*60*60*24);
   const hours = Math.floor(diff / (1000*60*60));
@@ -40,7 +42,7 @@ playBtn.addEventListener("click", () => {
     playBtn.textContent = "หยุดเพลง";
   } else {
     music.pause();
-    playBtn.textContent = "กดปุ่มเพื่อฟังเพลง ▶︎ •၊၊||၊|။||||။‌‌‌‌‌၊|•";
+    playBtn.textContent = "กดปุ่มเพื่อฟังเพลง ▶︎";
   }
   playing = !playing;
 });
@@ -120,3 +122,17 @@ function startTyping(){
     if(index >= message.length) clearInterval(interval);
   },100);
 }
+
+
+// ============ SWIPER ============
+const swiper = new Swiper(".mySwiper", {
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
