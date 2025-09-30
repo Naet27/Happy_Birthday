@@ -1,5 +1,5 @@
 // ============ COUNTDOWN ============
-const birthday = new Date("2025-09-01T00:00:00");
+const birthday = new Date("2025-10-01T00:00:00");
 
 function updateCountdown(){
   const now = new Date();
