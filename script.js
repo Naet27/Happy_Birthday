@@ -6,7 +6,7 @@ function updateCountdown(){
   let diff = birthday - now;
 
   if(diff < 0) {
-    document.getElementById("countdownText").textContent = "Happy Milk Day";
+    document.getElementById("countdownText").textContent = "⩇⩇:⩇⩇";
     launchConfetti();
     spawnBalloons();
     startTyping();
@@ -42,7 +42,7 @@ playBtn.addEventListener("click", () => {
     playBtn.textContent = "หยุดเพลง";
   } else {
     music.pause();
-    playBtn.textContent = "กดปุ่มเพื่อฟังเพลง ▶︎";
+    playBtn.textContent = "กดปุ่มเพื่อฟังเพลง ▶︎ •၊၊||၊|။||||။‌‌‌‌‌၊|•";
   }
   playing = !playing;
 });
